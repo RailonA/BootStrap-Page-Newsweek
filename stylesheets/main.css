@@ -1,0 +1,15 @@
+/* DEBUG */
+
+.trace {
+  border: 1px solid #a30000;
+}
+
+.hide {
+  display: none;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 73px;
+}
