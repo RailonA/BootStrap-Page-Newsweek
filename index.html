@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="text-nowrap">
+<html lang="en-us">
 
 <head>
     <meta charset="utf-8">
@@ -10,62 +10,71 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
     <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="stylesheet" href="assets/css/Footer-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
-<body class="container">
-    <div >
-        <header  class="mx-0 px-0">
+<body class="container-fluid">
+        <header  class="container-fluid  mx-0 px-0">
             <!-- Start: title-section -->
-            <div class="row d-flex flex-nowrap" style="background: #f24423;color: rgb(255,255,255);padding: 10px 0px;">
-                <!-- Start: weather-date -->
-                <div class="col-3 d-none d-lg-flex d-xl-flex flex-column justify-content-center align-items-xl-start">
-                    <div class="row">
+            <div class="row d-flex flex-nowrap  justify-content-md-between" style="background: #f24423;color: rgb(255,255,255);padding: 10px 0px 20px 0px;">
+            
+                <!-- Start: WEATHER - DATE-->           
+                <div class="col-md-3 d-none d-lg-flex  d-xl-flex flex-column justify-content-center align-items-lg-start" ">
+                    <div class="row d-flex flex-column">
                         <div class="col d-flex align-items-center" style="margin-bottom: 5px;font-size: 14px;"><i class="fa fa-sun-o d-xl-flex justify-content-xl-center align-items-xl-center" style="margin: 0;margin-right: 0;width: 24px;height: 24px;margin-left: -5px;"></i>
                             <p style="margin: 0px 8px;margin-bottom: 0;font-size: 15px;"><strong>54°</strong></p>
-                            <p style="margin-bottom: 0;font-size: 15px;"><strong>West Orange, NJ</strong></p><i class="fa fa-chevron-right" style="margin-left: 8px;height: auto;font-size: 11px;"></i></div>
-                    </div>
-                    <div class="row">
+                            <p style="margin-bottom: 0;font-size: 15px;"><strong>West Orange, NJ</strong></p></div>
                         <div class="col">
                             <p style="margin: 0;font-size: 14px;">Fri, Now 27, 2020</p>
                         </div>
                     </div>
                 </div>
-                <!-- End: weather-date -->
-                <div class="col-4 d-flex align-items-center" style="width: 30%;">
-                    <img src="./images/logo.png" alt="Newsweek" style="filter: grayscale(100%) invert(100%) contrast(10); width: 131px; height: 20px;">                </div>
-                <!-- ICON -->
-                <div class="col-2 d-flex justify-content-center align-items-center" style="margin-right: 20px; padding: 0px;font-size: 12px;">
-                    <div class="nav-header-button-1  btn-group d-flex justify-content-center align-items-center align-content-center" role="group">
-                      <button class=" btn btn-primary d-none d-md-flex" type="button" style="font-size: 14px;background: rgba(0,123,255,0);border-color: rgba(255,255,255,0); margin:0px;"><strong>LOGIN</strong></button><button class="btn btn-primary d-md-none d-lg-none d-xl-none"
-                            type="button" style="font-size: 14px;background: rgba(0,123,255,0);border-color: rgba(255,255,255,0);padding: 0 12px;">
-                            <i class="fa fa-user d-md-none" style="font-size: 20px;"></i></button></div>
-                </div>
-                <!-- BLACK BUTTON -->
-                <div class=" col-3 d-flex justify-content-center align-items-center" >
-                  <button type="button" class="btn btn-dark nav-header-button-2 text-center d-flex flex-column flex-sm-column justify-content-sm-center align-items-sm-center flex-md-row flex-lg-row align-items-lg-center flex-xl-row">
-                    <p class="d-flex justify-content-center flex-sm-column justify-content-sm-center align-items-sm-center flex-md-row flex-lg-row align-items-lg-center flex-xl-row" >SUBSCRIPTION </p>
-                    <p class="d-flex justify-content-center flex-sm-column justify-content-sm-center align-items-sm-center flex-md-row flex-lg-row align-items-lg-center flex-xl-row" > OFFERS</p>
-                    <p class="d-flex justify-content-center flex-sm-column justify-content-sm-center align-items-sm-center flex-md-row flex-lg-row align-items-lg-center flex-xl-row" ><i class="fa fa-chevron-right"></i></p></a>
-            </button>
-                </div>
-               <!-- MENU ICON TOP RIGHT HEADER-->
-                <div class=" burger-icon col-2 d-flex d-sm-flex d-lg-none d-xl-none justify-content-center align-items-center justify-content-sm-center" >
-                  <i class=" fas fa-bars"></i>
-                </div>
+
+
+    <!-- DIV ONE -->
+                    <div class="col-sm-6 col-md-4 col-lg-2 d-flex align-items-center" style="width: 30%;">
+                        <img src="./images/logo.png" alt="Newsweek" style="filter: grayscale(100%) invert(100%) contrast(10); width: 131px; height: 20px;"> 
+                    </div>
+
+
+    <!-- DIV TWO -->
+            <div class="header-div-two d-flex col-sm-6 col-md-5 col-lg-3 justify-content-between align-items-center" style="margin-left: 20px; "> 
+                    <!-- ICON LOGIN BUTTON -->
+                            <div class="nav-header-button-1   btn-group d-flex justify-content-between align-items-center align-content-center" role="group">
+                              <button class="btn btn-primary d-none d-md-flex" type="button" style="font-size: 16px;background: rgba(0,123,255,0);border-color: rgba(255,255,255,0); margin:0px; padding: 0px;"><strong>LOGIN</strong></button>
+                              <button class="btn btn-primary d-md-none d-lg-none d-xl-none"
+                                    type="button" style="font-size: 14px;background: rgba(0,123,255,0);border-color: rgba(255,255,255,0);padding: 0 5px 0 12px;">
+                                    <i class="fa fa-user d-md-none" style="font-size: 20px;"></i></button>
+                                </div>
+                        <!-- YELLOW BUTTON -->
+                        <div class=" d-flex justify-content-center align-items-center" >
+                          <button type="button" class="btn btn-dark nav-header-button-2 text-center d-flex flex-sm-row justify-content-sm-center flex-md-row flex-lg-row align-items-lg-center flex-xl-row">
+                            <p class="text-nowrap text-center d-flex justify-content-center flex-sm-column justify-content-sm-center  flex-md-row flex-lg-row align-items-lg-center flex-xl-row" >SUBSCRIPTION ></p>
+                    </button>
+                        </div>
+    
+                   <!-- MENU ICON TOP RIGHT HEADER-->
+                   <div class=" burger-icon d-flex d-sm-flex d-lg-none d-xl-none justify-content-center align-items-center justify-content-sm-center" >
+                    <i class=" fas fa-bars"></i>
+                  </div>
             </div>
+                <!-- End: weather-date -->
+        
+</div>
+               
             <!-- End: title-section -->
-            <!-- Start: Nav-container -->
-            <div class="row">
-                <div class="col">
-                    <nav class="navbar navbar-light navbar-expand-md d-none d-sm-none d-md-none d-lg-flex d-xl-flex flex-row" style="padding: 8px 0px;width: 93%;margin-top: -10px;background: #ffffff;border-top-right-radius: 25px;">
-                            <div class="collapse navbar-collapse d-none d-sm-none d-md-none d-lg-flex"
-                                id="navcol-2" style="margin-left: 0px;">
-                                <ul class="nav navbar-nav d-flex d-md-none d-lg-flex d-xl-flex" style="color: rgb(0,0,0);">
+            <!-- Start: NAV-container -->
+                <div class="row">
+                    <nav class="navbar navbar-light navbar-expand-md d-none d-sm-none d-md-none d-lg-flex d-xl-flex flex-row" style="padding: 8px 0px;width: 80%;margin-top: -10px;background: #ffffff;border-top-right-radius: 25px;">
+                            <div class="collapse navbar-collapse d-none d-sm-none d-md-none d-lg-flex text-nowrap" style="margin-left: 10px;">
+                                <ul class="nav navbar-nav d-flex d-md-none d-lg-flex d-xl-flex">
                                     <li class="nav-header-1 nav-item "><a class="nav-link" href="#" ><strong>U.S.</strong></a></li>
                                     <li
                                         class="nav-header-1 nav-item "><a class="nav-link" href="#" ><strong>World</strong></a></li>
@@ -88,7 +97,7 @@
                                                                         <li
                                                                             class=" nav-header-weather nav-item"><a class="nav-link" href="#" ><strong>Weather</strong></a></li>
                                                                             <li class="nav-item d-flex"><a class="nav-link" href="#">Search</a><i class="fa fa-search"
-                                                                                    style="color: rgb(99,99,99);"></i></li>
+                                                                                    style="color: rgb(99,99,99); margin-top: 10px;"></i></li>
                                 </ul>
                         </div>
                     </nav>
@@ -96,245 +105,377 @@
                         <li class="nav-item">
                             <p style="color: rgb(0,0,0);padding: 10px;font-size: 14px;padding-left: 30px;"><strong>TRENDING</strong></p>
                         </li>
-                        <li class="nav-header-2 nav-item"><a class="nav-link" href="#" style="color: #545353;padding: 10px;font-size: 14px;"><strong>DONALD TRUMP</strong></a></li>
-                        <li class="nav-header-2 nav-item"><a class="nav-link" href="#" style="color: #545353;padding: 10px;font-size: 14px;"><strong>JOE BIDEN</strong></a></li>
-                        <li class="nav-header-2 nav-item"><a class="nav-link" href="#" style="color: #545353;padding: 10px;font-size: 14px;"><strong>2020 ELECTION</strong></a></li>
-                        <li class="nav-header-2 nav-item"><a class="nav-link" href="#" style="color: #545353;padding: 10px;font-size: 14px;"><strong>CORONAVIRUS</strong></a></li>
-                        <li class="nav-header-2 nav-item"><a class="nav-link" href="#" style="color: #545353;padding: 10px;font-size: 14px;"><strong>STIMULUS PACKAGE</strong></a></li>
+                        <li class=" nav-item"><a class="nav-link nav-header-2" href="#" ><strong>DONALD TRUMP</strong></a></li>
+                        <li class=" nav-item"><a class="nav-link nav-header-2" href="#" ><strong>JOE BIDEN</strong></a></li>
+                        <li class=" nav-item"><a class="nav-link nav-header-2" href="#" ><strong>2020 ELECTION</strong></a></li>
+                        <li class=" nav-item"><a class="nav-link nav-header-2" href="#" ><strong>CORONAVIRUS</strong></a></li>
+                        <li class=" nav-item"><a class="nav-link nav-header-2" href="#" ><strong>STIMULUS PACKAGE</strong></a></li>
                     </ul>
                 </div>
-            </div>
             <!-- End: Nav-container -->
         </header>
+      
+      <!-- BODY -->
         <main class="d-flex flex-column" style="padding: 0 15px;">
-            <div class="row d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column justify-content-center flex-sm-column flex-md-row flex-lg-row flex-xl-row">
-                <div class=" col-3" style="padding: 0;padding-top: 20px;">
+            
+            
+ <div class=" main-body row d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex flex-column justify-content-center flex-sm-column flex-md-row flex-lg-row flex-xl-row">
+                <!--COLUMN-ONE  (LEFT-COLUMN)  -->
+          <div class=" col-one col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding: 0;padding-top: 20px;">
                     <h2 class="text-uppercase" style="font-size: 13px;color: rgb(160,158,158);"><strong>Featured Stories</strong></h2>
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678311/trump-speaks-diplomatic-room.webp?w=397&amp;h=265&amp;q=90&amp;f=3f23e88657479054681a91166cd5ba3e&quot;) center / cover no-repeat;height: 149px;">
-                            <div
-                                class="card-img-overlay" style="padding: 0;height: 22px;margin-top: calc(68.5% - 22px);background: rgba(230,230,230,0);">
-                                <p class="text-uppercase d-lg-flex" style="width: 87px;color: #f24423;background: #e6e6e6;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>politics</strong></p>
+                   
+                    <article >
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two ">
+                                <p class="text-uppercase">politics</p>
                         </div>
-                </div>
-                <h3 class="text-wrap" style="margin-top: 0;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Trump Says U.S. Election Security Is a 'Joke' but Watchdogs Rate It Highly</strong><br><strong>Link</strong><br></a></h3>
-                <p
-                    class="text-wrap" style="font-size: 10px;line-height: 14px;">The Department of Homeland Security concluded that the 2020 election was the "most secure in American history."</p>
+                        <img class="w-100 " src="https://d.newsweek.com/en/full/1678311/trump-speaks-diplomatic-room.webp?w=397&amp;h=265&amp;q=90&amp;f=3f23e88657479054681a91166cd5ba3e">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Trump Says U.S. Election Security Is a 'Joke' but Watchdogs Rate It Highly</strong><br><strong></strong><br></a></h3>
+                      <p
+                      class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">The Department of Homeland Security concluded that the 2020 election was the "most secure in American history."</p>
                     </article>
                     <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678315/barbarer-ferrer.webp?w=397&amp;h=265&amp;q=90&amp;f=f88ccee6fecaf5b85e86483a9be09a9d&quot;) center / cover no-repeat;height: 149px;">
-                            <div
-                                class="card-img-overlay" style="padding: 0;height: 22px;margin-top: calc(68.5% - 22px);background: rgba(230,230,230,0);">
-                                <p class="text-uppercase d-lg-flex" style="width: 62px;color: #f24423;background: #e6e6e6;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>NEWS</strong></p>
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two">
+                                <p class="text-uppercase">NEWS</p>
                         </div>
-            </div>
-            <h3 class="text-wrap" style="margin-top: 0;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Protesters Chant 'Open L.A.' Outside Health Chief's Home&nbsp;</strong><br></a></h3>
-            <p class="text-wrap" style="font-size: 10px;line-height: 14px;">The home of Los Angeles County Public Health Director Dr. Barbara Ferrer&nbsp;was surrounded by dozens of protesters angry about the latest round of <br>Covid restrictions.</p>
-            </article>
-            <article>
-                <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678455/pelosi-schumer.webp?w=397&amp;h=265&amp;q=90&amp;f=9f1107d33972b69785661470fd034259&quot;) center / cover no-repeat;height: 149px;">
-                    <div
-                        class="card-img-overlay" style="padding: 0;height: 22px;margin-top: calc(68.5% - 22px);background: rgba(230,230,230,0);">
-                        <p class="text-uppercase d-lg-flex" style="width: 46px;color: #f24423;background: #e6e6e6;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>U.S.</strong></p>
-                </div>
-    </div>
-    <h3 class="text-wrap" style="margin-top: 0;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Calls Grow for Pelosi, Schumer to Accept Smaller Initial Stimulus Deal</strong><br></a></h3>
-    <p class="text-wrap" style="font-size: 10px;line-height: 14px;">Pressure mounts as the stalemate over a further relief package continues, with a bipartisan deal yet to be made despite each side advocating stimulus in some form.</p>
-    </article>
-    <article>
-        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678481/biden.webp?w=397&amp;h=265&amp;q=90&amp;f=6392f3e5e7b8857873fa8268bcf31578&quot;) center / cover no-repeat;height: 149px;">
-            <div class="card-img-overlay"
-                style="padding: 0;height: 22px;margin-top: calc(68.5% - 22px);background: rgba(230,230,230,0);">
-                <p class="text-uppercase d-lg-flex" style="width: 87px;color: #f24423;background: #e6e6e6;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>politics</strong></p>
-            </div>
-        </div>
-        <h3 class="text-wrap" style="margin-top: 0;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Federal Election Official Says 2020 'Fair,' Future Votes for Those Unhappy</strong><br></a></h3>
-        <p class="text-wrap" style="font-size: 10px;line-height: 14px;">President Donald Trump continues to rally against the election outcome insisting foul play aided Joe Biden's success, despite not evidencing widespread fraud and irregularities he and allies have alleged.</p>
-    </article>
-    <article>
-        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678467/biden.jpg?w=397&amp;h=265&amp;q=90&amp;f=f880dd3e72f5d67532eb664035f787fb&quot;) center / cover no-repeat;height: 149px;">
-            <div class="card-img-overlay"
-                style="padding: 0;height: 22px;margin-top: calc(68.5% - 22px);background: rgba(230,230,230,0);">
-                <p class="text-uppercase d-lg-flex" style="width: 87px;color: #f24423;background: #e6e6e6;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>politics</strong></p>
-            </div>
-        </div>
-        <h3 class="text-wrap" style="margin-top: 0;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Biden Far More Popular With Republicans Than Trump Is With Democrats: Poll</strong><br></a></h3>
-        <p class="text-wrap" style="font-size: 10px;line-height: 14px;">The Democrat has spoken of being a president for all Americans, while encouraging his supporters and President Trump's to give each other a chance.</p>
-    </article>
-    </div>
-    <div class="col" style="padding-top: 20px;padding-right: 20;padding-left: 20px;">
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1678315/barbarer-ferrer.webp?w=397&amp;h=265&amp;q=90&amp;f=f88ccee6fecaf5b85e86483a9be09a9d">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Protesters Chant 'Open L.A.' Outside Health Chief's Home&nbsp;</strong><br><strong></strong><br></a></h3>
+                      <p
+                    class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">The home of Los Angeles County Public Health Director Dr. Barbara Ferrer&nbsp;was surrounded by dozens of protesters angry about the latest round of Covid restrictions.</p>
+                    </article>
+                    <article>
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two">
+                                <p class="text-uppercase">U.S.</p>
+                        </div>
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1678455/pelosi-schumer.webp?w=397&amp;h=265&amp;q=90&amp;f=9f1107d33972b69785661470fd034259">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Calls Grow for Pelosi, Schumer to Accept Smaller Initial Stimulus Deal</strong><br><strong></strong><br></a></h3>
+                      <p
+                    class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">Pressure mounts as the stalemate over a further relief package continues, with a bipartisan deal yet to be made despite each side advocating stimulus in some form.</p>
+                    </article>
+                    <article>
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two">
+                                <p class="text-uppercase">U.S.</p>
+                        </div>
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1678481/biden.webp?w=397&amp;h=265&amp;q=90&amp;f=6392f3e5e7b8857873fa8268bcf31578">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Federal Election Official Says 2020 'Fair,' Future Votes for Those Unhappy</strong><br><strong></strong><br></a></h3>
+                      <p
+                    class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">President Donald Trump continues to rally against the election outcome insisting foul play aided Joe Biden's success, despite not evidencing widespread fraud and irregularities he and allies have alleged.</p>
+                    </article>
+                    <article>
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two">
+                                <p class="text-uppercase">politics</p>
+                        </div>
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1678467/biden.jpg?w=397&amp;h=265&amp;q=90&amp;f=f880dd3e72f5d67532eb664035f787fb">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Biden Far More Popular With Republicans Than Trump Is With Democrats: Poll</strong><br><strong></strong><br></a></h3>
+                      <p
+                    class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">The Democrat has spoken of being a president for all Americans, while encouraging his supporters and President Trump's to give each other a chance. </p>
+                    </article>
+                    <article>
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two">
+                                <p class="text-uppercase">politics</p>
+                        </div>
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1678311/trump-speaks-diplomatic-room.webp?w=397&amp;h=265&amp;q=90&amp;f=3f23e88657479054681a91166cd5ba3e">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Trump Says U.S. Election Security Is a 'Joke' but Watchdogs Rate It Highly</strong><br><strong></strong><br></a></h3>
+                      <p
+                      class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">>The Department of Homeland Security concluded that the 2020 election was the "most secure in American history."</p>
+                    </article>
+                    <article>
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two">
+                                <p class="text-uppercase">NEWS</p>
+                        </div>
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1678315/barbarer-ferrer.webp?w=397&amp;h=265&amp;q=90&amp;f=f88ccee6fecaf5b85e86483a9be09a9d">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Protesters Chant 'Open L.A.' Outside Health Chief's Home&nbsp;</strong><br><strong></strong><br></a></h3>
+                      <p
+                    class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">The home of Los Angeles County Public Health Director Dr. Barbara Ferrer&nbsp;was surrounded by dozens of protesters angry about the latest round of Covid restrictions.</p>
+                    </article>
+                    <article>
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two">
+                                <p class="text-uppercase">U.S.</p>
+                        </div>
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1678455/pelosi-schumer.webp?w=397&amp;h=265&amp;q=90&amp;f=9f1107d33972b69785661470fd034259">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Calls Grow for Pelosi, Schumer to Accept Smaller Initial Stimulus Deal</strong><br><strong></strong><br></a></h3>
+                      <p
+                    class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">Pressure mounts as the stalemate over a further relief package continues, with a bipartisan deal yet to be made despite each side advocating stimulus in some form.</p>
+                    </article>
+                    <article>
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two">
+                                <p class="text-uppercase">U.S.</p>
+                        </div>
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1678481/biden.webp?w=397&amp;h=265&amp;q=90&amp;f=6392f3e5e7b8857873fa8268bcf31578">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Federal Election Official Says 2020 'Fair,' Future Votes for Those Unhappy</strong><br><strong></strong><br></a></h3>
+                      <p
+                    class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">President Donald Trump continues to rally against the election outcome insisting foul play aided Joe Biden's success, despite not evidencing widespread fraud and irregularities he and allies have alleged.</p>
+                    </article>
+                    <article>
+                        <div class="top-article-div-one " style="height: 180px;border-radius: none;">
+                            <div class="top-article-div-two">
+                                <p class="text-uppercase">politics</p>
+                        </div>
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1678467/biden.jpg?w=397&amp;h=265&amp;q=90&amp;f=f880dd3e72f5d67532eb664035f787fb">
+                    </div>
+                     <h3 class="text-wrap" style="margin-top:-15px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Biden Far More Popular With Republicans Than Trump Is With Democrats: Poll</strong><br><strong></strong><br></a></h3>
+                      <p
+                    class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">The Democrat has spoken of being a president for all Americans, while encouraging his supporters and President Trump's to give each other a chance. </p>
+                    </article>
+          </div>
+                 
+               <!--COLUMN-TWO  (MID-COLUMN)  -->
+        <div class="col-two col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 "  style="padding-top: 20px;padding-right: 20;padding-left: 20px;">
         <h2 class="text-uppercase" style="font-size: 13px;color: rgb(160,158,158);"><strong>Top Story</strong></h2>
-        <article>
-            <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678472/moderna.webp?w=591&amp;h=364&amp;f=9fb5225db75b4bc804048d697b6c661e&quot;) center / cover no-repeat;height: 222px;">
-                <div class="card-img-overlay"
-                    style="padding: 0;height: 22px;margin-top: calc(54% - 22px);background: rgba(230,230,230,0);">
-                    <p class="text-uppercase d-lg-flex" style="width: 141px;color: #f24423;background: #e6e6e6;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>tech &amp; science</strong></p>
-                </div>
+       
+       
+        <article class="top-article-div-one d-flex flex-column">
+            <div class="top-article-div-one" style="height: 250px;border-radius: none;">
+                <div class="top-article-div-two">
+                    <p class="text-uppercase">tech &amp; science</p>
             </div>
-            <h3 class="text-wrap" style="margin-top: 0;font-size: 19px;color: rgb(0,0,0);padding-top: 78px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Moderna to Ask FDA to Release COVID Vaccine, Expects 20m Doses in 2020</strong><br></a></h3>
-            <p class="text-wrap" style="font-size: 10px;line-height: 14px;">The biotechnology company said its ongoing phase 3 study suggests the vaccine is 94.1 percent effective.</p>
+            <img class="w-100" src="https://d.newsweek.com/en/full/1678472/moderna.webp?w=591&amp;h=364&amp;f=9fb5225db75b4bc804048d697b6c661e">
+        </div>
+         <h3 class="text-wrap" style="margin-top:10px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 0;padding-top: 0;font-size: 18px;color: rgb(0,0,0);line-height: 0;"><strong>Moderna to Ask FDA to Release COVID Vaccine, Expects 20m Doses in 2020</strong><br><strong></strong><br></a></h3>
+          <p
+          class="text-wrap" style=" margin-top:-15px; font-size: 12px;line-height: 14px;">The biotechnology company said its ongoing phase 3 study suggests the vaccine is 94.1 percent effective.</p>
         </article>
+
+
+
         <div class="row d-flex">
+           
+           
             <div class="col">
-                <h2 class="text-uppercase" style="font-size: 13px;color: rgb(160,158,158);"><strong>Top Story</strong></h2>
-                <div class="row d-flex">
-                    <div class="col d-flex flex-column align-items-xl-center"><img style="background: url(&quot;https://d.newsweek.com/en/full/1677377/hostage-negotiator-police-fbi-negotiator.jpg?w=397&amp;h=397&amp;f=e9628ed46cefb7a0cf7ec13474ececb9&quot;) no-repeat;background-size: contain;"><a class="text-wrap"
-                            href="#" style="color: rgb(74,74,74);font-size: 10px;margin-top: 10px;"><strong>'I'm an FBI Trained Former Hostage Negotiator'</strong></a></div>
-                    <div class="col d-flex flex-column align-items-xl-center"><img style="background: url(&quot;https://d.newsweek.com/en/full/1674549/adoption-fostering-teenager.png?w=397&amp;h=397&amp;f=0b29194ed8dabc3dab0f136286f8bab7&quot;) center / contain;"><a class="text-wrap" href="#" style="color: rgb(74,74,74);font-size: 10px;margin-top: 10px;"><strong>'I Was Adopted After Living in 24 Foster Homes'</strong></a></div>
-                    <div
-                        class="col d-flex flex-column align-items-xl-center"><img style="background: url(&quot;https://d.newsweek.com/en/full/1676782/coronavirus-pandemic-nurse-hospitals.jpg?w=397&amp;h=397&amp;f=4f672c1a6fd84ac6af449931b3f9c7d3&quot;) no-repeat;background-size: contain;"><a class="text-wrap"
-                            href="#" style="color: rgb(74,74,74);margin-top: 10px;font-size: 10px;"><strong>'I'm a COVID Nurse. I've Seen So Much Death.'</strong></a></div>
+                <!-- MY TURN -->
+                <h2 class="text-uppercase" style="font-size: 20px;color: rgb(160,158,158);"><strong>MY TURN</strong></h2>
+                
+                <div class="row d-flex   flex-column  flex-sm-column flex-md-row  flex-lg-row flex-xl-row">
+                    <div class="col d-flex flex-column align-items-xl-center" style="padding-right: 0;">
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1634390/5-game-thrones-hardhome.webp?w=397&amp;h=397&amp;f=7a39a424594c5c7c3904dce5497d3780" no-repeat; background-size: contain;">
+                        <a class="text-wrap" href="#" style="color: rgb(74,74,74);font-size: 20px;margin-top: 10px;">
+                            <strong>100 Best TV Episodes of All Time</strong></a>
+                        </div>
+                        <div class="col d-flex flex-column align-items-xl-center" style="padding-right: 0;">
+                            <img class="w-100" src="https://d.newsweek.com/en/full/1634390/5-game-thrones-hardhome.webp?w=397&amp;h=397&amp;f=7a39a424594c5c7c3904dce5497d3780" alt="#" no-repeat; background-size: contain;">
+                            <a class="text-wrap" href="#" style="color: rgb(74,74,74);font-size: 20px;margin-top: 10px;">
+                                <strong>100 Best TV Episodes of All Time</strong></a>
+                            </div>
+                            <div class="col d-flex flex-column align-items-xl-center" style="padding-right: 0;">
+                                <img class="w-100" src="https://d.newsweek.com/en/full/1634390/5-game-thrones-hardhome.webp?w=397&amp;h=397&amp;f=7a39a424594c5c7c3904dce5497d3780">
+                                <a class="text-wrap" href="#" style="color: rgb(74,74,74);font-size: 20px;margin-top: 10px;">
+                                    <strong>100 Best TV Episodes of All Time</strong></a>
+                                </div>
+                </div>
+        </div>
+
+
+        </div>
+
+
+
+
+    <div class="row d-flex">
+        <div class="col" style="margin-top: 25px;">
+
+            <h2 class="text-uppercase" style="font-size: 20px;color: rgb(160,158,158);"><strong>CULTURE&nbsp;&amp; TRAVEL</strong></h2>
+            <!-- CYLTURE & TRAVEL -->
+            <div class="row d-flex   flex-column  flex-sm-column flex-md-row  flex-lg-row flex-xl-row">
+                <div class="col d-flex flex-column align-items-xl-center" style="padding-right: 0;">
+                    <img class="w-100" src="https://d.newsweek.com/en/full/1634390/5-game-thrones-hardhome.webp?w=397&amp;h=397&amp;f=7a39a424594c5c7c3904dce5497d3780" no-repeat; background-size: contain;">
+                    <a class="text-wrap" href="#" style="color: rgb(74,74,74);font-size: 20px;margin-top: 10px;">
+                        <strong>100 Best TV Episodes of All Time</strong></a>
+                    </div>
+                    <div class="col d-flex flex-column align-items-xl-center" style="padding-right: 0;">
+                        <img class="w-100" src="https://d.newsweek.com/en/full/1634390/5-game-thrones-hardhome.webp?w=397&amp;h=397&amp;f=7a39a424594c5c7c3904dce5497d3780" alt="#" no-repeat; background-size: contain;">
+                        <a class="text-wrap" href="#" style="color: rgb(74,74,74);font-size: 20px;margin-top: 10px;">
+                            <strong>100 Best TV Episodes of All Time</strong></a>
+                        </div>
+                        <div class="col d-flex flex-column align-items-xl-center" style="padding-right: 0;">
+                            <img class="w-100" src="https://d.newsweek.com/en/full/1634390/5-game-thrones-hardhome.webp?w=397&amp;h=397&amp;f=7a39a424594c5c7c3904dce5497d3780">
+                            <a class="text-wrap" href="#" style="color: rgb(74,74,74);font-size: 20px;margin-top: 10px;">
+                                <strong>100 Best TV Episodes of All Time</strong></a>
+                            </div>
             </div>
+
         </div>
     </div>
+
     <div class="row d-flex">
         <div class="col" style="margin-top: 25px;">
-            <h2 class="text-uppercase" style="font-size: 13px;color: rgb(160,158,158);"><strong>CULTURE&nbsp;&amp; TRAVEL</strong></h2>
-            <div class="row d-flex">
-                <div class="col d-flex flex-column align-items-xl-center" style="padding-right: 0;"><img style="background: url(&quot;https://d.newsweek.com/en/full/1634390/5-game-thrones-hardhome.webp?w=397&amp;h=397&amp;f=7a39a424594c5c7c3904dce5497d3780&quot;);background-size: contain;"><a class="text-wrap" href="#" style="color: rgb(74,74,74);font-size: 10px;margin-top: 10px;"><strong>100 Best TV Episodes of All Time</strong></a></div>
-                <div
-                    class="col d-flex flex-column align-items-xl-center"><img style="background: url(&quot;https://d.newsweek.com/en/full/1677956/indigenous-tiktok-star-james-cree.webp?w=397&amp;h=397&amp;f=03c806ba284a273e6a94a9da0b919eb6&quot;) center / contain;"><a class="text-wrap" href="#" style="color: rgb(74,74,74);font-size: 10px;margin-top: 10px;"><strong>"Native TikTok" Offers Fresh Look Inside Indigenous Culture</strong></a></div>
-            <div
-                class="col d-flex flex-column align-items-xl-center"><img style="background: url(&quot;https://d.newsweek.com/en/full/1674794/cul-map-holiday-food-tang-yuan.webp?w=397&amp;h=397&amp;l=62&amp;t=38&amp;f=409712d2ec4b3c7a84479a6a5fa03ab7&quot;) no-repeat;background-size: contain;"><a class="text-wrap"
-                    href="#" style="color: rgb(74,74,74);margin-top: 10px;font-size: 10px;"><strong>Unique Holiday Foods From Around the World</strong></a></div>
-    </div>
-    </div>
-    </div>
-    <div class="row d-flex">
-        <div class="col" style="margin-top: 25px;">
-            <h2 class="text-uppercase" style="font-size: 13px;color: rgb(160,158,158);padding-bottom: 5px;border-bottom-width: 1px;border-bottom-style: solid;"><strong>CULTURE&nbsp;&amp; TRAVEL</strong></h2>
+            <!-- MORE STORIES -->
+            <h2 class="text-uppercase" style="font-size: 20px;color: rgb(160,158,158);padding-bottom: 5px;border-bottom-width: 1px;border-bottom-style: solid;"><strong>MORE STORIES</strong></h2>
+           
             <div class="row d-flex flex-column">
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Melania Trump Unveils 'America the Beautiful' Decorations for Christmas</strong></a>
+               
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Melania Trump Unveils 'America the Beautiful' Decorations for Christmas</strong></a>
                         <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">"During this special time of the year, I am delighted to share 'America the Beautiful' and pay tribute to the majesty of our great Nation," the first lady tweeted Monday.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678555/joe-biden.webp?w=95&amp;h=95&amp;f=8bcd28a442bf6280cef7f6db56e66186&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Biden's Favorability Already 6 Percent Higher Than Trump's Record: Poll</strong></a>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678555/joe-biden.webp?w=95&amp;h=95&amp;f=8bcd28a442bf6280cef7f6db56e66186" >
+
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Biden's Favorability Already 6 Percent Higher Than Trump's Record: Poll</strong></a>
                         <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">Trump's favorability rating record was 49 percent, according to Gallup. Biden's now stands at 55 percent.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678454/rep-matt-gaetz-questions-ag-william-barr.webp?w=95&amp;h=95&amp;f=2e3613889941710cc8831881be5304e9&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Trump Ally Matt Gaetz Says "We're Proving the Fraud' After Lawsuit Failers</strong></a>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Trump Ally Matt Gaetz Says "We're Proving the Fraud' After Lawsuit Failers</strong></a>
                         <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">More than 40 lawsuits have been filed attempting to challenge the outcome of the 2020 election in several states.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678456/rand-paul.webp?w=95&amp;h=95&amp;f=09f212bfe0fd79b675495c93cf3265fc&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Rand Paul Sparks Backlash with Vote Count 'Anomaly" Tweet</strong></a>
-                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">The Kentucky senator has a tweet flagged for sharing disputed claims about voter fraud in the election.</p>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Melania Trump Unveils 'America the Beautiful' Decorations for Christmas</strong></a>
+                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">"During this special time of the year, I am delighted to share 'America the Beautiful' and pay tribute to the majesty of our great Nation," the first lady tweeted Monday.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/788637/gettyimages-905384026.webp?w=95&amp;h=95&amp;f=2d643663ce276c201f361a591108a3cf&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Laverne Cox Opens up about L.A. Transphobic Attack</strong></a>
-                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">"I need to share this, I'm kind of in shock, I'm definitely super triggered," Cox said in an Instagram live posted Sunday.</p>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678555/joe-biden.webp?w=95&amp;h=95&amp;f=8bcd28a442bf6280cef7f6db56e66186" >
+
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Biden's Favorability Already 6 Percent Higher Than Trump's Record: Poll</strong></a>
+                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">Trump's favorability rating record was 49 percent, according to Gallup. Biden's now stands at 55 percent.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678326/trump-speaks-press-briefing-room.webp?w=95&amp;h=95&amp;f=eba1f5629664c93779ee07a0f2112704&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Republican Tells Trump to 'Stop the Stupid' after 'Election Hoax' Tweet</strong></a>
-                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">The Trump campaign has repeatedly made unsubstantiated claims of voter fraud in the presidential election.</p>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Trump Ally Matt Gaetz Says "We're Proving the Fraud' After Lawsuit Failers</strong></a>
+                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">More than 40 lawsuits have been filed attempting to challenge the outcome of the 2020 election in several states.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678485/barack-obama.webp?w=95&amp;h=95&amp;f=cefff1a24b64b0b788c656499b6ede35&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>'Barack Obama' Blackface Skit on Russian TV Sparks Outrage&nbsp;</strong></a>
-                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">The woman appeared on political satire show Mezhdunarodnaya Pilorama wearing a red bandana and chain and suggesting <br>Obama's predecessors could not read.</p>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Melania Trump Unveils 'America the Beautiful' Decorations for Christmas</strong></a>
+                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">"During this special time of the year, I am delighted to share 'America the Beautiful' and pay tribute to the majesty of our great Nation," the first lady tweeted Monday.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678467/biden.webp?w=95&amp;h=95&amp;f=146d0374090b3fc60001c0961e0de9ef&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Biden Far More Popular With Republicans Than Trump Is With Democrats: Poll</strong></a>
-                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">The Democrat has spoken of being a president for all Americans, while encouraging his supporters and President Trump's to give each other a chance.<br></p>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678555/joe-biden.webp?w=95&amp;h=95&amp;f=8bcd28a442bf6280cef7f6db56e66186" >
+
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Biden's Favorability Already 6 Percent Higher Than Trump's Record: Poll</strong></a>
+                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">Trump's favorability rating record was 49 percent, according to Gallup. Biden's now stands at 55 percent.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678396/nottingham-rave.webp?w=95&amp;h=95&amp;f=8fa0e1a4be06dea6f0610d86f8eb0fc4&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Police Break up 200-Student Rave During COVID Lockdown</strong></a>
-                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">Students were found partying both outside and inside the university halls.<br></p>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Trump Ally Matt Gaetz Says "We're Proving the Fraud' After Lawsuit Failers</strong></a>
+                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">More than 40 lawsuits have been filed attempting to challenge the outcome of the 2020 election in several states.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678318/atlanta.webp?w=95&amp;h=95&amp;f=8f764e48b6c08e1e0a1436970ec0dd4e&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>300 Teens Fight Near Atlanta Shopping Mall, Leaving 13-year-old Injured</strong></a>
-                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">Atlanta police detained one teenager who they said was the "primary aggressor" in the fight near Atlantic Station.<br></p>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Melania Trump Unveils 'America the Beautiful' Decorations for Christmas</strong></a>
+                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">"During this special time of the year, I am delighted to share 'America the Beautiful' and pay tribute to the majesty of our great Nation," the first lady tweeted Monday.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678407/super-nintendo-world.webp?w=95&amp;h=95&amp;l=74&amp;t=30&amp;f=9f572367d29f2205ff151acc5b5c1b01&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Super Nintendo World With Mario Kart Ride To Open February 2021</strong></a>
-                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">New pictures and video show the Nintendo-themed world, where guests can race in a Mario Kart ride and go on a treasure hunt with Yoshi and Captain Toad.<br></p>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678555/joe-biden.webp?w=95&amp;h=95&amp;f=8bcd28a442bf6280cef7f6db56e66186" >
+
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Biden's Favorability Already 6 Percent Higher Than Trump's Record: Poll</strong></a>
+                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">Trump's favorability rating record was 49 percent, according to Gallup. Biden's now stands at 55 percent.</p>
                 </div>
-                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678480/neera-tanden-president-ceo-cap.webp?w=95&amp;h=95&amp;f=28c7d87464f83652844822666198915c&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                    <a
-                        class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>What Neera Tanden Has Said about Stimulus</strong></a>
-                        <p class="text-wrap" style="font-size: 11px;padding-bottom: 15px;border-bottom-width: 1px;border-bottom-style: none;">Tanden has criticized Republican proposals for being too focused on big business and not ordinary Americans.<br></p>
+                <div class="col flex-column align-items-xl-center" style="padding-right: 20px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                    <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                    <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Trump Ally Matt Gaetz Says "We're Proving the Fraud' After Lawsuit Failers</strong></a>
+                        <p class="text-wrap" style="font-size: 11px;border-bottom-width: 1px;border-bottom-style: solid;padding-bottom: 15px;">More than 40 lawsuits have been filed attempting to challenge the outcome of the 2020 election in several states.</p>
                 </div>
+
             </div>
         </div>
     </div>
-    </div>
-    <div class="col-4" style="padding-top: 20px;">
+        </div>
+
+               <!--COLUMN-THREE  (RIGHT-COLUMN)  -->
+
+    <div class="col col-three" style="padding-top: 20px;">
         <h2 class="text-uppercase" style="font-size: 13px;color: rgb(160,158,158);"><strong>THE&nbsp;DEBATE</strong></h2>
-        <div class="row" style="border-top-style: solid;border-top-color: rgb(221,221,221);border-bottom-style: solid;border-bottom-color: rgb(221,221,221);">
-            <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: -15px;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1591836/jonathan-tobin.png?w=63&amp;h=63&amp;f=3de733b09b3c97b87933e4368ae4e559&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
-                <div><a href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>Should Trump Concede? Yes</strong></a>
-                    <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>Jonathan Tobin</strong></a></p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col d-lg-flex justify-content-lg-center align-items-lg-center">
-                        <p class="d-lg-flex justify-content-lg-center align-items-lg-center" style="font-size: 15px;color: rgb(255,255,255);background: #000000;border-radius: 50px;width: 32px;height: 32px;margin: 0 auto;margin-bottom: 0;z-index: 1;"><strong>VS</strong></p>
+            <div class="showdown">
+                <div class="contender contender-1">
+                    <div class="img">
+                        <img src="https://d.newsweek.com/en/full/1591836/jonathan-tobin.png?w=63&h=63&f=3de733b09b3c97b87933e4368ae4e559"
+                            alt="Jonathan Tobin" width="63px" height="63px">
+                    </div>
+                    <div class="context">
+                        <a href="#">
+                            <h3>Should Trump Concede? Yes</h3>
+                        </a>
+                        <p>By <a href="#">Jonathan Tobin</a></p>
                     </div>
                 </div>
+                <div class="versus">
+                    <p>vs</p>
+                </div>
+                <div class="contender contender-2">
+                    <div class="context">
+                        <a href="#">
+                            <h3>Should Trump Concede? Not Yet</h3>
+                        </a>
+                        <p>By <a href="#">Spencer Klavan</a></p>
+                    </div>
+                    <img src="https://d.newsweek.com/en/full/1611078/spencer-klavan.png?w=63&h=63&f=50a9e9cc8ef45fd2d3ac21f96eb0bd9f"
+                        alt="Spencer Klavan" width="63px" height="63px">
+                </div>
             </div>
-            <div class="col d-flex justify-content-between align-items-center" style="border-top: 1px solid rgb(230,230,230);padding: 0;margin-top: -15px;padding-bottom: 10px;padding-top: 15px;">
-                <div><a href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>Should Trump Concede? Not Yet</strong></a>
-                    <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>spencer klavan</strong></a></p>
-                </div><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1611078/spencer-klavan.png?w=63&amp;h=63&amp;f=50a9e9cc8ef45fd2d3ac21f96eb0bd9f&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 0;"></div>
-        </div>
+       <!-- OPINION SECTION COLUMN THREE -->
         <h2 class="text-uppercase" style="font-size: 13px;color: rgb(160,158,158);margin-bottom: 0;margin-top: 20px;"><strong>opinion</strong></h2>
-        <div class="row">
-            <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img style="background: url(&quot;https://d.newsweek.com/en/full/1595774/gordon-chang.webp?w=63&amp;h=63&amp;f=e6ac7c2e3f20ff658db6088a2c2ebef7&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
-                <div style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>China Wants Your DNA - and it's up To No Good</strong></a>
-                    <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>gordon G. chang</strong></a></p>
-                </div>
+      
+        <div class="col d-flex flex-column">
+ 
+        <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1594385/marianne-williamson.webp?w=63&amp;h=63&amp;f=e5673fcb9ddab3bb801cfc7a5c103a2f&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
+        <div
+            style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>A Revolution of Love</strong></a>
+            <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>Marianne williamson</strong></a></p>
+        </div>
+        </div>
+        <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1677967/kenneth-l-marcus.webp?w=63&amp;h=63&amp;f=e4da34ad685cf5a94aa96648e5b52693&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
+        <div
+        style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>Beat Our Civil Rights Record</strong></a>
+        <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>KENNETH L. MARCUS</strong></a></p>
+        </div>
+        </div>
+        <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1594385/marianne-williamson.webp?w=63&amp;h=63&amp;f=e5673fcb9ddab3bb801cfc7a5c103a2f&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
+            <div
+                style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>A Revolution of Love</strong></a>
+                <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>Marianne williamson</strong></a></p>
             </div>
-            <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img style="background: url(&quot;https://d.newsweek.com/en/full/1563625/nigel-farage.webp?w=63&amp;h=63&amp;f=241bf306fe74b397c2ecf4116cc79b62&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
-                <div style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>China Wants Your DNA - and it's up To No Good</strong></a>
-                    <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>Nigel Farage</strong></a></p>
-                </div>
+            </div>
+            <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1677967/kenneth-l-marcus.webp?w=63&amp;h=63&amp;f=e4da34ad685cf5a94aa96648e5b52693&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
+            <div
+            style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>Beat Our Civil Rights Record</strong></a>
+            <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>KENNETH L. MARCUS</strong></a></p>
+            </div>
             </div>
             <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1594385/marianne-williamson.webp?w=63&amp;h=63&amp;f=e5673fcb9ddab3bb801cfc7a5c103a2f&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
                 <div
                     style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>A Revolution of Love</strong></a>
                     <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>Marianne williamson</strong></a></p>
-            </div>
-        </div>
-        <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1602706/alan-dershowitz.webp?w=63&amp;h=63&amp;f=d83ee0f0a2a958ae747f9793d8d73562&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
-            <div
-                style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>How Should President Trump Exercise His Pardon Power?</strong></a>
-                <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>Alan Dershowitz</strong></a></p>
-        </div>
+                </div>
+                </div>
+                <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1677967/kenneth-l-marcus.webp?w=63&amp;h=63&amp;f=e4da34ad685cf5a94aa96648e5b52693&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
+                <div
+                style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>Beat Our Civil Rights Record</strong></a>
+                <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>KENNETH L. MARCUS</strong></a></p>
+                </div>
+                </div>
+                <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1594385/marianne-williamson.webp?w=63&amp;h=63&amp;f=e5673fcb9ddab3bb801cfc7a5c103a2f&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
+                    <div
+                        style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>A Revolution of Love</strong></a>
+                        <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>Marianne williamson</strong></a></p>
+                    </div>
+                    </div>
+  
     </div>
-    <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1677951/gilad-erdan.webp?w=63&amp;h=63&amp;f=863c54b7381e9a960e02e0ebd570d782&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
-        <div
-            style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>U.N. 'Palestinian Package' of Resolutions Only Fans the Flames of Conflict</strong></a>
-            <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>Gilad erdan</strong></a></p>
-    </div>
-    </div>
-    <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;border-bottom: 1px solid rgb(230,230,230);margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1677967/kenneth-l-marcus.webp?w=63&amp;h=63&amp;f=e4da34ad685cf5a94aa96648e5b52693&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
-        <div
-            style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>Beat Our Civil Rights Record</strong></a>
-            <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>KENNETH L. MARCUS</strong></a></p>
-    </div>
-    </div>
-    <div class="col d-flex d-lg-flex align-items-lg-center" style="padding-left: 0;margin-bottom: 0;margin-top: 0;padding-top: 10px;padding-bottom: 15px;border-bottom: 1px none rgb(230,230,230) ;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1577421/hank-gilman.webp?w=63&amp;h=63&amp;f=f18b9a7364da071493072861d8b4448f&quot;) center / contain no-repeat;width: 63px;height: 63px;margin-right: 10px;">
-        <div
-            style="max-width: 253px;"><a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 15px;"><strong>Can Janet Yellen Save the Economy From Mitch McConnell?</strong></a>
-            <p class="text-monospace text-uppercase" style="font-size: 12px;margin: 0;">By&nbsp;<a href="#" style="color: rgb(99,99,99);"><strong>Hank gilman</strong></a></p>
-    </div>
-    </div>
-    </div>
-    <div class="row">
-        <div class="col" style="padding: 5px 15px;background: #f7f7f7;border: 1px solid rgb(238,238,238);padding-top: 15px;">
+
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-10  col-md-6 col-lg-10" style="padding: 5px 15px;background: #f7f7f7;border: 1px solid rgb(238,238,238);padding-top: 15px;">
             <form>
-                <div class="d-flex"><i class="fa fa-hacker-news" style="margin-right: 5px;width: 28px;height: 28px;font-size: 27px;color: rgb(241,68,35);"></i>
+                <div class="d-flex justify-content-center"><i class="fa fa-hacker-news" style="margin-right: 5px;width: 28px;height: 28px;font-size: 27px;color: rgb(241,68,35);"></i>
                     <h5 class="text-uppercase text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(0,0,0);"><strong>start your day with our top 5 articles</strong></h5>
                 </div>
                 <div class="form-group"><input class="form-control" type="email" placeholder="Email address" style="height: 30px;margin-bottom: 10px;margin-top: 15px;"><button class="btn btn-primary btn-sm text-uppercase" type="button" style="width: 100%;height: 30px;padding-bottom: 6px;font-size: 12px;text-align: center;background: rgb(242,68,35);"><strong>Free sign up &gt;</strong></button></div>
@@ -343,76 +484,90 @@
     </div>
     </div>
     </div>
-    <div class="row d-flex flex-column">
-        <div class="col">
+<!-- TOP THREE COLUMNS END HERE -->
+
+
+    <div class="row d-flex flex-column" style="padding-top: 80px;">
+        <div class="col d-flex justify-content-center">
             <div class="d-flex justify-content-lg-center align-items-lg-center" style="border-bottom: 1px solid rgb(235,235,235);margin-bottom: 15px;"><i class="fa fa-hacker-news" style="margin-right: 5px;width: 28px;height: 28px;font-size: 27px;color: rgb(241,68,35);"></i>
                 <h5 class="text-uppercase text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(0,0,0);"><strong>In THE&nbsp;MAGAZINE</strong></h5>
             </div>
         </div>
+
+
         <div class="col" style="padding-right: 30px;padding-left: 30px;">
-            <div class="row">
-                <div class="col"><img class="d-lg-flex" style="height: 299px;width: 225px;margin: 0 auto;background: url(&quot;https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.webp?w=290&amp;h=387&amp;q=90&amp;f=c7f495b3d564f2f12dfd40832c688b4e&quot;) no-repeat;background-size: contain;">
-                    <p
-                        style="color: rgb(255,0,0);background: #ffffff;margin-top: -24px;width: 166px;padding-left: 10px;padding-right: 10px;line-height: 24px;font-size: 14px;">DECEMBER 11 ISSUE</p><a class="d-xl-flex justify-content-xl-center text-wrap" href="#" style="color: rgb(1,1,1);font-size: 12px;margin-top: 0;width: 100%;text-align: center;"><strong>SEE&nbsp;ALL FEATURES &gt;</strong></a></div>
-                <div
-                    class="col-md-3">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.webp?w=466&amp;h=311&amp;l=49&amp;t=48&amp;q=90&amp;f=b4199882348a460299d282c96d719a51&quot;) center / cover no-repeat;height: 213px;"></div>
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col col-md-3  ">
+                    <img  class="card-img w-100 d-block" style="height: 299px;width: 166px;margin: 0 auto;background: url(&quot;https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.webp?w=290&amp;h=387&amp;q=90&amp;f=c7f495b3d564f2f12dfd40832c688b4e&quot;) no-repeat;background-size: contain;">
+                    
+                    <p style="color: rgb(255,0,0);background: #ffffff;margin-top: -24px;width: 166px;padding-left: 10px;padding-right: 10px;line-height: 24px;font-size: 14px;">DECEMBER 11 ISSUE</p>
+                    <a class="d-xl-flex justify-content-xl-center text-wrap" href="#" style="color: rgb(1,1,1);font-size: 12px;margin-top: 0;width: 100%;text-align: center;">
+                        <strong>SEE&nbsp;ALL FEATURES &gt;</strong></a></div>
+               
+                       
+                    
+                        <div class="col col-md-3  ">
+                              <article>
+                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1674257/cover-fe-vaccine-moderna.webp?w=466&amp;h=311&amp;l=49&amp;t=48&amp;q=90&amp;f=b4199882348a460299d282c96d719a51&quot;) center / cover no-repeat;height: 213px;"></div>
                         <div
                             class="card-img-overlay d-flex" style="padding: 0;height: 22px;margin-top: 218px;background: rgba(230,230,230,0);margin-left: 15px;">
-                            <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>politics</strong></p>
+                            <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>COVER</strong></p>
                             <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ff0000;background: #ffffff;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>Health</strong></p>
             </div>
+
             <h3 class="text-wrap" style="margin-top: 88px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Vaccines Won't Stop the Pandemic Until 50 Million US&nbsp;Skeptics Embrace Them</strong><br></a></h3>
             </article>
         </div>
-        <div class="col-md-3">
+        
+        
+        <div class="col col-md-3  ">
             <article>
                 <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1675767/per-prisoners-history-01-450090369jpg.webp?w=466&amp;h=311&amp;l=48&amp;t=64&amp;q=90&amp;f=c502a88a280f529b973548b54bda0f49&quot;) center / cover no-repeat;height: 213px;"></div>
                 <div
                     class="card-img-overlay d-flex" style="padding: 0;height: 22px;margin-top: 218px;background: rgba(230,230,230,0);margin-left: 15px;">
-                    <p class="text-uppercase d-lg-flex" style="width: 111px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>PERISCOPE</strong></p>
+                    <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>COVER</strong></p>
                     <p class="text-uppercase d-lg-flex" style="width: 45px;color: #ff0000;background: #ffffff;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;margin-left: 0px;"><strong>U.S.</strong></p>
         </div>
         <h3 class="text-wrap" style="margin-top: 88px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Understanding the Iwo Jima Memorial's Power and Weather to Topple Monuments</strong><br></a></h3>
         </article>
     </div>
-    <div class="col-md-3">
+    <div class="col col-md-3  ">
         <article>
             <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1675779/per-prisoners-history-04.webp?w=466&amp;h=311&amp;l=60&amp;t=59&amp;q=90&amp;f=55acc462b556fd64fce7064636317f47&quot;) center / cover no-repeat;height: 213px;"></div>
             <div
                 class="card-img-overlay d-flex" style="padding: 0;height: 22px;margin-top: 218px;background: rgba(230,230,230,0);margin-left: 15px;">
-                <p class="text-uppercase d-lg-flex" style="width: 111px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>PERISCOPE</strong></p>
+                <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>COVER</strong></p>
                 <p class="text-uppercase d-lg-flex" style="width: 45px;color: #ff0000;background: #ffffff;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;margin-left: 0px;"><strong>U.S.</strong></p>
     </div>
     <h3 class="text-wrap" style="margin-top: 88px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>'Some Monuments Really Should Be Torn Down,' Says WWII&nbsp;Historian Keith Lowe</strong><br></a></h3>
     </article>
     </div>
     </div>
-    <div class="row" style="margin-top: 15px;">
-        <div class="col-md-3">
+    <div class="row d-flex flex-column flex-md-row " style="margin-top: 15px;">
+        <div class="col col-md-3  ">
             <article>
                 <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1674794/cul-map-holiday-food-tang-yuan.webp?w=466&amp;h=311&amp;l=62&amp;t=38&amp;q=90&amp;f=258feff5c6f4dc315f1d67e58f8c5ba3&quot;) center / cover no-repeat;height: 213px;"></div>
                 <div
                     class="card-img-overlay d-flex" style="padding: 0;height: 22px;margin-top: 218px;background: rgba(230,230,230,0);margin-left: 15px;">
-                    <p class="text-uppercase d-lg-flex" style="width: 95px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>Downtime</strong></p>
+                    <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>COVER</strong></p>
                     <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ff0000;background: #ffffff;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>culture</strong></p>
         </div>
         <h3 class="text-wrap" style="margin-top: 88px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Unique Holiday Foods From Around the World</strong><br></a></h3>
         </article>
     </div>
-    <div class="col-md-3">
+    <div class="col col-md-3 ">
         <article>
             <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1676922/christian-serratos-feels-pressure-portraying-selena.webp?w=466&amp;h=311&amp;q=90&amp;f=4d0453f2b4fc906121673befc3e7b6b5&quot;) center / cover no-repeat;height: 213px;"></div>
             <div
                 class="card-img-overlay d-flex" style="padding: 0;height: 22px;margin-top: 218px;background: rgba(230,230,230,0);margin-left: 15px;">
-                <p class="text-uppercase d-lg-flex" style="width: 95px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>Downtime</strong></p>
+                <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>COVER</strong></p>
                 <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ff0000;background: #ffffff;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>culture</strong></p>
     </div>
     <h3 class="text-wrap" style="margin-top: 88px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Christian Serratos Feels the 'Pressure' of Portraying Selena</strong><br></a></h3>
     </article>
     </div>
-    <div class="col-md-3">
+    <div class="col col-md-3 ">
         <article>
             <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1675767/per-prisoners-history-01-450090369jpg.webp?w=466&amp;h=311&amp;l=48&amp;t=64&amp;q=90&amp;f=c502a88a280f529b973548b54bda0f49&quot;) center / cover no-repeat;height: 213px;"></div>
             <div
@@ -422,18 +577,32 @@
     <h3 class="text-wrap" style="margin-top: 88px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>LINEUP</strong><br></a></h3>
     </article>
     </div>
+    <div class="col col-md-3  ">
+        <article>
+            <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1674794/cul-map-holiday-food-tang-yuan.webp?w=466&amp;h=311&amp;l=62&amp;t=38&amp;q=90&amp;f=258feff5c6f4dc315f1d67e58f8c5ba3&quot;) center / cover no-repeat;height: 213px;"></div>
+            <div
+                class="card-img-overlay d-flex" style="padding: 0;height: 22px;margin-top: 218px;background: rgba(230,230,230,0);margin-left: 15px;">
+                <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ffffff;background: #ff0000;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>COVER</strong></p>
+                <p class="text-uppercase d-lg-flex" style="width: 87px;color: #ff0000;background: #ffffff;padding: 0 10px;padding-left: 10px;height: 16px;font-size: 14px;margin-bottom: 0;padding-bottom: 18px;"><strong>culture</strong></p>
+    </div>
+    <h3 class="text-wrap" style="margin-top: 88px;font-size: 19px;color: rgb(0,0,0);padding-top: 5px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Unique Holiday Foods From Around the World</strong><br></a></h3>
+    </article>
+</div>
     </div>
     </div>
-    </div>
+
+
     <div class="row d-flex flex-column">
-        <div class="col" style="margin: 17px;">
+        <div class="col d-flex justify-content-center">
             <div class="d-flex justify-content-lg-center align-items-lg-center" style="border-bottom: 1px solid rgb(235,235,235);margin-bottom: 15px;"><i class="fa fa-hacker-news" style="margin-right: 5px;width: 28px;height: 28px;font-size: 27px;color: rgb(241,68,35);"></i>
                 <h5 class="text-uppercase text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(0,0,0);"><strong>editor's pick</strong></h5>
             </div>
         </div>
+
         <div class="col" style="padding-right: 30px;padding-left: 30px;">
             <div class="row">
-                <div class="col-md-3">
+
+                <div class="col-xs-12 col-md-6 col-lg-3">
                     <article>
                         <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678311/trump-speaks-diplomatic-room.webp?w=397&amp;h=265&amp;f=aa31a581c8b2cea951c4146b655ff7b6&quot;) center / cover no-repeat;height: 213px;"></div>
                         <div
@@ -444,7 +613,8 @@
                 </article>
                 <p class="text-wrap" style="font-size: 12px;">The Department of Homeland Security concluded that the 2020 election was the "most secure in American history."</p>
             </div>
-            <div class="col-md-3">
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
                 <article>
                     <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678538/kayleigh-mcenany.webp?w=397&amp;h=265&amp;f=e9a015c1ef6c1dfe8efcfcafaf9dbe18&quot;) center / cover no-repeat;height: 213px;"></div>
                     <div
@@ -455,7 +625,7 @@
             </article>
             <p class="text-wrap" style="font-size: 12px;">Kayleigh McEnany claimed Biden-Harris administration will not have the first all female senior communications team as Trump and Pence already do.</p>
         </div>
-        <div class="col-md-3">
+        <div class="col-xs-12 col-md-6 col-lg-3">
             <article>
                 <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678810/donald-trump.webp?w=397&amp;h=265&amp;f=18a081118580eb01f433e7d9cdc0c241&quot;) center / cover no-repeat;height: 213px;"></div>
                 <div
@@ -466,7 +636,7 @@
         </article>
         <p class="text-wrap" style="font-size: 12px;">President Donald Trump is projected to receive 232 electoral votes but faithless electors, Biden electors who decide to vote for another candidate, could change the game.</p>
     </div>
-    <div class="col-md-3">
+    <div class="col-xs-12 col-md-6 col-lg-3">
         <article>
             <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678646/mitch-mcconnell-senate-luncheon-november-2020.webp?w=397&amp;h=265&amp;f=162760931a48096e53aec294e6f3e5a9&quot;) center / cover no-repeat;height: 213px;"></div>
             <div
@@ -479,7 +649,7 @@
     </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-xs-12 col-md-6 col-lg-3">
             <article>
                 <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678761/raymond-james-stadium.webp?w=397&amp;h=265&amp;f=b7300d2e6c30e9201b23131e50c01a3f&quot;) center / cover no-repeat;height: 213px;"></div>
                 <div
@@ -490,7 +660,7 @@
         </article>
         <p class="text-wrap" style="font-size: 12px;">The state will hit 1 million positive cases on Tuesday, yet the governor wants businesses and schools to remain open. That likely means nine college bowl games and the February Super Bowl will have fans in the stands.</p>
     </div>
-    <div class="col-md-3">
+    <div class="col-xs-12 col-md-6 col-lg-3">
         <article>
             <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678544/moderna.webp?w=397&amp;h=265&amp;f=3c70995a0a5cf73f2febc857729c3849&quot;) center / cover no-repeat;height: 213px;"></div>
             <div class="card-img-overlay d-flex"
@@ -501,7 +671,7 @@
         </article>
         <p class="text-wrap" style="font-size: 12px;">Moderna announced a study of the vaccine candidate involving 30,000 people found the treatment was over 94 percent effective against COVID and it was seeking an Emergency Use Authorization.</p>
     </div>
-    <div class="col-md-3">
+    <div class="col-xs-12 col-md-6 col-lg-3">
         <article>
             <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678569/earth.webp?w=397&amp;h=265&amp;f=6df533b272944be635a5ce436c6ffa26&quot;) center / cover no-repeat;height: 213px;"></div>
             <div class="card-img-overlay d-flex"
@@ -512,7 +682,7 @@
         </article>
         <p class="text-wrap" style="font-size: 12px;">The object, which is estimated to measure between 15-33 feet across, was discovered on September 17, 2020.</p>
     </div>
-    <div class="col-md-3">
+    <div class="col-xs-12 col-md-6 col-lg-3">
         <article>
             <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678575/nyc-school-classroom-november-2020.webp?w=397&amp;h=265&amp;f=d602521f01bc4332db8a7a6d569172cc&quot;) center / cover no-repeat;height: 213px;"></div>
             <div
@@ -526,308 +696,323 @@
     </div>
     </div>
     </div>
+
+
     <div class="row d-flex d-sm-flex flex-column flex-sm-column flex-md-column">
         <div class="col" style="margin: 17px;height: 19px;">
             <div class="d-flex justify-content-lg-start align-items-lg-center" style="margin-bottom: 0;height: 25px;padding-top: 29px;border-style: none;border-top: 1px solid rgb(237,237,237);border-bottom: 1px none rgb(235,235,235);">
                 <h5 class="text-uppercase text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>U.S.</strong></h5>
             </div>
         </div>
-        <div class="col" style="padding-right: 12px;padding-left: 30px;margin-top: 12px;">
-            <div class="row d-flex flex-column justify-content-between flex-sm-column flex-md-row flex-lg-row flex-xl-row" style="margin-left: 0px;margin-right: 0px;">
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679006/sean-hannity.webp?w=397&amp;h=265&amp;f=97c905ddb8299dfc213b97e5bb2298d5&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Fox News' Sean Hannity Says He Doesn't Vet the Information He Gives Out</strong><br></a></h3>
+
+        <div class=" d-flex flex-column flex-md-row " style="margin-top: 12px;">
+            
+            <div class="row d-flex flex-xs-row flex-md-row col-xs-12 col-md-8">                
+                   
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Fox News' Sean Hannity Says He Doesn't Vet the Information He Gives Out</strong><br></a></h3>
+                    </article>
+
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>8 Million Offensive Spam Emails Sent to Middle School, High School Students</strong><br></a></h3>
                     </article>
                 </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>8 Million Offensive Spam Emails Sent to Middle School, High School Students</strong><br></a></h3>
-                    </article>
-                </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;">
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1679109/houston-texas-hospital-covid-19-patient-november-2020.webp?w=397&amp;h=265&amp;f=75f807010b0983e1b4f27bfcf49ecae3&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
-                        </div>
+
+                
+                <div class="row d-flex flex-xs-row col-xs-12 col-md-4"style="border-bottom-width: 1px;border-bottom-style: none;padding-left:10px;">   
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1679126/ps5-playstation-5.webp?w=95&amp;h=95&amp;f=b449f80892f4a95b80b9aa37883c1f11&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>PS5 Restock Updates from PopFindr, BrickSeek, Walmart, Target and more</strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678607/when-will-student-loan-payments-interest-resume.webp?w=95&amp;h=95&amp;f=00ca181a167d71bf8e791ef5e267d690&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>When Do Students Loan Payments, Interest Resume? Trump Order Set to Expire</strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
                 </div>
-            </div>
         </div>
+        
     </div>
-    <div class="row d-flex flex-column">
+    
+    <div class="row d-flex d-sm-flex flex-column flex-sm-column flex-md-column">
         <div class="col" style="margin: 17px;height: 19px;">
             <div class="d-flex justify-content-lg-start align-items-lg-center" style="margin-bottom: 0;height: 25px;padding-top: 29px;border-style: none;border-top: 1px solid rgb(237,237,237);border-bottom: 1px none rgb(235,235,235);">
-                <h5 class="text-capitalize text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>world</strong></h5>
+                <h5 class="text-uppercase text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>U.S.</strong></h5>
             </div>
         </div>
-        <div class="col d-flex flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row" style="padding-right: 12px;padding-left: 30px;margin-top: 12px;">
-            <div class="row d-flex flex-column justify-content-between flex-sm-column flex-md-row flex-lg-row flex-xl-row" style="margin-left: 0px;margin-right: 0px;">
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679146/trier.webp?w=397&amp;h=265&amp;f=4064735c393bd5c98f129daf4e995bec&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Fox Two Dead and Several Injured After Car Drives Into Pedestrains in Germany Out</strong><br></a></h3>
+
+        <div class=" d-flex flex-column flex-md-row " style="margin-top: 12px;">
+            
+            <div class="row d-flex flex-xs-row flex-md-row col-xs-12 col-md-8">                
+                   
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Fox News' Sean Hannity Says He Doesn't Vet the Information He Gives Out</strong><br></a></h3>
+                    </article>
+
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>8 Million Offensive Spam Emails Sent to Middle School, High School Students</strong><br></a></h3>
                     </article>
                 </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679081/marriage-china.webp?w=397&amp;h=265&amp;f=def6c1da5ebc0a64681a62619c15a1b9&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Child Bride, 13, Broke China's Marriage Law, Regulator Says</strong><br></a></h3>
-                    </article>
-                </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;">
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1679085/thatcher.webp?w=397&amp;h=265&amp;f=f90e972dc0be2355a42d96874b237607&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Thousands Sign Up to Throw Eggs at Margaret Thatcher Statue</strong></a>
-                        </div>
+
+                
+                <div class="row d-flex flex-xs-row col-xs-12 col-md-4"style="border-bottom-width: 1px;border-bottom-style: none;padding-left:10px;">   
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1679041/view-keswick-island.webp?w=95&amp;h=95&amp;l=3&amp;t=54&amp;f=64f1f8d3efb2cc1f64d245d7ab9cbd79&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong><span style="text-decoration: underline;">Chinese Company Buys Australian Island Then Bans Australians From It&nbsp;&nbsp;</span></strong><br><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678523/children-play-rochdale-england.webp?w=95&amp;h=95&amp;l=67&amp;t=88&amp;f=cae43d9b40ca1db560cda149263ec702&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Almost 40,000 Children in London Will Rely on Food Banks This Christmas</strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
                 </div>
-            </div>
         </div>
+        
     </div>
-    <div class="row d-flex flex-column">
+
+    <div class="row d-flex d-sm-flex flex-column flex-sm-column flex-md-column">
         <div class="col" style="margin: 17px;height: 19px;">
             <div class="d-flex justify-content-lg-start align-items-lg-center" style="margin-bottom: 0;height: 25px;padding-top: 29px;border-style: none;border-top: 1px solid rgb(237,237,237);border-bottom: 1px none rgb(235,235,235);">
-                <h5 class="text-capitalize text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>Business</strong></h5>
+                <h5 class="text-uppercase text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>U.S.</strong></h5>
             </div>
         </div>
-        <div class="col" style="padding-right: 12px;padding-left: 30px;margin-top: 12px;">
-            <div class="row d-flex flex-column justify-content-between flex-sm-column flex-md-row flex-lg-row flex-xl-row" style="margin-left: 0px;margin-right: 0px;">
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1677864/amazon-warehouse-england.webp?w=397&amp;h=265&amp;f=039533abf92ea2a5975b21d62dacf7c2&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Amazon's $500 Million Worker Bonus Is Less Than Company Makes in Single Day</strong><br></a></h3>
+
+        <div class=" d-flex flex-column flex-md-row " style="margin-top: 12px;">
+            
+            <div class="row d-flex flex-xs-row flex-md-row col-xs-12 col-md-8">                
+                   
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Fox News' Sean Hannity Says He Doesn't Vet the Information He Gives Out</strong><br></a></h3>
+                    </article>
+
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>8 Million Offensive Spam Emails Sent to Middle School, High School Students</strong><br></a></h3>
                     </article>
                 </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1677819/amazon-warehouse-wales.webp?w=397&amp;h=265&amp;f=f52774f0f7268361816bafa8cdcffcc4&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Amazon Black Friday Strikes in Germany as Amnesty Urges Workers to Unionize</strong><br></a></h3>
-                    </article>
-                </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;">
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1620564/stock-exchange.webp?w=397&amp;h=265&amp;f=5fa7c77f2de4bc4b63dc08220fdb6de4&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Dow Records 30K Close Signals Recovering Economy, expert says</strong></a>
-                        </div>
+
+                
+                <div class="row d-flex flex-xs-row col-xs-12 col-md-4"style="border-bottom-width: 1px;border-bottom-style: none;padding-left:10px;">   
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1676343/corona-travel.webp?w=95&amp;h=95&amp;f=4021e8abc05f38a3b53bbfc254a4d3a3&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Travel Insurance Sales Rocket as Americans Ignore COVID Advice for Thanksgiving</strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1676202/janet-yellen.webp?w=95&amp;h=95&amp;f=5fbded3d84cb6ba133dbc4ac4fa6e1a2&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong><span style="text-decoration: underline;">Biden Treasury Pick Janet Yellen's Past Warnings About Debt Trigger Alarm</span></strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
                 </div>
-            </div>
         </div>
+        
     </div>
-    <div class="row d-flex flex-column">
+
+    <div class="row d-flex d-sm-flex flex-column flex-sm-column flex-md-column">
         <div class="col" style="margin: 17px;height: 19px;">
             <div class="d-flex justify-content-lg-start align-items-lg-center" style="margin-bottom: 0;height: 25px;padding-top: 29px;border-style: none;border-top: 1px solid rgb(237,237,237);border-bottom: 1px none rgb(235,235,235);">
-                <h5 class="text-capitalize text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>Tech &amp; Science</strong></h5>
+                <h5 class="text-uppercase text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>U.S.</strong></h5>
             </div>
         </div>
-        <div class="col" style="padding-right: 12px;padding-left: 30px;margin-top: 12px;">
-            <div class="row d-flex flex-column justify-content-between flex-sm-column flex-md-row flex-lg-row flex-xl-row" style="margin-left: 0px;margin-right: 0px;">
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679131/carpet-python-snake.webp?w=397&amp;h=265&amp;f=27979684fb4f0e707ada4dd78f384377&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Dog Owner Rescues Puppy From Python's Grip by Swinging It Around Yard</strong><br></a></h3>
+
+        <div class=" d-flex flex-column flex-md-row " style="margin-top: 12px;">
+            
+            <div class="row d-flex flex-xs-row flex-md-row col-xs-12 col-md-8">                
+                   
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Fox News' Sean Hannity Says He Doesn't Vet the Information He Gives Out</strong><br></a></h3>
+                    </article>
+
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>8 Million Offensive Spam Emails Sent to Middle School, High School Students</strong><br></a></h3>
                     </article>
                 </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678737/best-playstation-5-accessories.webp?w=397&amp;h=265&amp;f=2b213e80ecda04d3784e66dfca0d00c4&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Best PS5 Accessories: PlayStation 5 Headphones, Remotes, Controllers &amp; More</strong><br></a></h3>
-                    </article>
-                </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;">
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678996/venomous-bothrops-jararaca-snake.webp?w=397&amp;h=265&amp;f=833d767bb785f563fc65d325ee38b918&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Pet Dog Saves Child From Venomous, 6-Foot Snake, Gets Bitten Repeatedly</strong></a>
-                        </div>
+
+                
+                <div class="row d-flex flex-xs-row col-xs-12 col-md-4"style="border-bottom-width: 1px;border-bottom-style: none;padding-left:10px;">   
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678536/little-penguins.webp?w=95&amp;h=95&amp;f=85a1c9824969d8b67945937280a6c826&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Rangers Save Little Penguin's Life after Spotting Plastic Stuck Around Neck</strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678491/apple-store-milan-italy.webp?w=95&amp;h=95&amp;f=6e13adc77e934d15e21a06df6a731817&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong><span style="text-decoration: underline;">Apple Hit with $12 Million Fine over iPhone Waterproof Claim</span></strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
                 </div>
-            </div>
         </div>
+        
     </div>
-    <div class="row d-flex flex-column">
+
+    <div class="row d-flex d-sm-flex flex-column flex-sm-column flex-md-column">
         <div class="col" style="margin: 17px;height: 19px;">
             <div class="d-flex justify-content-lg-start align-items-lg-center" style="margin-bottom: 0;height: 25px;padding-top: 29px;border-style: none;border-top: 1px solid rgb(237,237,237);border-bottom: 1px none rgb(235,235,235);">
-                <h5 class="text-capitalize text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>Culture</strong></h5>
+                <h5 class="text-uppercase text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>U.S.</strong></h5>
             </div>
         </div>
-        <div class="col" style="padding-right: 12px;padding-left: 30px;margin-top: 12px;">
-            <div class="row d-flex flex-column justify-content-between flex-sm-column flex-md-row flex-lg-row flex-xl-row" style="margin-left: 0px;margin-right: 0px;">
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1670595/cbs-fall-lineup.webp?w=397&amp;h=265&amp;f=f8ea9227280b3bafce8268bf22b721e0&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Why 'NCIS' Is Not Airing This Week and When It Returns</strong><br></a></h3>
+
+        <div class=" d-flex flex-column flex-md-row " style="margin-top: 12px;">
+            
+            <div class="row d-flex flex-xs-row flex-md-row col-xs-12 col-md-8">                
+                   
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Fox News' Sean Hannity Says He Doesn't Vet the Information He Gives Out</strong><br></a></h3>
+                    </article>
+
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>8 Million Offensive Spam Emails Sent to Middle School, High School Students</strong><br></a></h3>
                     </article>
                 </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679112/alexis-tom-sharkey.webp?w=397&amp;h=265&amp;f=98d1e10650259a45111654ee4a6abd11&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Alexis Sharkey's Husband Tom Pays Tribute as Instagram Model Found Dead</strong><br></a></h3>
-                    </article>
-                </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;">
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1679076/queen-elizabeth-ii-lady-celia-vestey.webp?w=397&amp;h=265&amp;f=6ccb213a3ed8f2917ca4d2a50a88cb96&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Prince Harry's Godmother 'Died Suddenly, but Peacefully', Family Reveal</strong></a>
-                        </div>
+
+                
+                <div class="row d-flex flex-xs-row col-xs-12 col-md-4"style="border-bottom-width: 1px;border-bottom-style: none;padding-left:10px;">   
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678724/check-your-giving-tuesday-donations-match.webp?w=95&amp;h=95&amp;f=dcb5a7e24782b05188a744a70556a48f&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Were Your Giving Tuesday Donations Matched by Facebook? Here's How to Check</strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678640/world-aids-day-ribbon.webp?w=95&amp;h=95&amp;f=29018e93d80c08587fae0741063ae27e&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong><span style="text-decoration: underline;">World AIDS Day 2020: Theme, History and Facts about HIV and AIDS</span></strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
                 </div>
-            </div>
         </div>
+        
     </div>
-    <div class="row d-flex flex-column">
+
+    <div class="row d-flex d-sm-flex flex-column flex-sm-column flex-md-column">
         <div class="col" style="margin: 17px;height: 19px;">
             <div class="d-flex justify-content-lg-start align-items-lg-center" style="margin-bottom: 0;height: 25px;padding-top: 29px;border-style: none;border-top: 1px solid rgb(237,237,237);border-bottom: 1px none rgb(235,235,235);">
-                <h5 class="text-capitalize text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>Sports</strong></h5>
+                <h5 class="text-uppercase text-wrap" style="max-width: 253px;font-size: 15px;color: rgb(242,68,35);"><strong>U.S.</strong></h5>
             </div>
         </div>
-        <div class="col" style="padding-right: 12px;padding-left: 30px;margin-top: 12px;">
-            <div class="row d-flex flex-column justify-content-between flex-sm-column flex-md-row flex-lg-row flex-xl-row" style="margin-left: 0px;margin-right: 0px;">
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679088/adam-silver-nba.webp?w=397&amp;h=265&amp;f=49ddca7edab47d1dbcb6cff5f6de6d1a&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>'No Data' to Suggest NBA's Support for BLM Hit League's TV Ratings</strong><br></a></h3>
+
+        <div class=" d-flex flex-column flex-md-row " style="margin-top: 12px;">
+            
+            <div class="row d-flex flex-xs-row flex-md-row col-xs-12 col-md-8">                
+                   
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0pxpx;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Fox News' Sean Hannity Says He Doesn't Vet the Information He Gives Out</strong><br></a></h3>
+                    </article>
+
+                    <article class="col-xs-12 col-md-6 flex-column">
+                        <div class=" d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;">
+                            <img class="card-img" style="background: url(&quot;https://d.newsweek.com/en/full/1679114/florida.webp?w=397&amp;h=265&amp;f=127c466d915b2ca3be1d1af926596607&quot;) center / cover no-repeat;height: 160px;"></div>
+                        <h3 class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>8 Million Offensive Spam Emails Sent to Middle School, High School Students</strong><br></a></h3>
                     </article>
                 </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;height: 287px;width: 259px;">
-                    <article>
-                        <div class="card d-flex d-lg-flex flex-column" style="height: 130px;border-radius: none;"><img class="card-img w-100 d-block" style="background: url(&quot;https://d.newsweek.com/en/full/1678960/philadelphia-eagles-carson-wentz.webp?w=397&amp;h=265&amp;f=cd740b9e07f07eaf53700821cc1468c4&quot;) center / cover no-repeat;height: 160px;"></div>
-                        <h3
-                            class="text-wrap" style="margin-top: 30px;font-size: 19px;color: rgb(0,0,0);padding-top: 0px;"><br><a href="#" style="margin-top: 236px;padding-top: 0;font-size: 15px;color: rgb(0,0,0);line-height: 0;"><strong>Should Eagles Drop Carson Wentz and Give Jalen Hurts a Shot at QB?</strong><br></a></h3>
-                    </article>
-                </div>
-                <div class="col-4 flex-column align-items-xl-center" style="padding: 0px;padding-right: 10px;padding-left: 10px;border-bottom-width: 1px;border-bottom-style: none;">
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678959/philadelphia-eagles-nfl.webp?w=397&amp;h=265&amp;f=008a441500fef05f6ec9599c1991afed&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>Philadelphia Eagles' Late Two-point Conversion Costs Bettor $500,000</strong></a>
-                        </div>
+
+                
+                <div class="row d-flex flex-xs-row col-xs-12 col-md-4"style="border-bottom-width: 1px;border-bottom-style: none;padding-left:10px;">   
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678781/ravens-steelers.webp?w=95&amp;h=95&amp;f=9b4ae04c10f0d8be0b7512bc0dece707&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>COVID-Ravaged Match-Up Between Ravens and Steelers Moved - Again</strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
-                    <div class="row">
-                        <div class="col" style="border-bottom: 1px solid rgb(239,239,239);height: auto;margin-top: 10px;"><img class="float-left" style="background: url(&quot;https://d.newsweek.com/en/full/1678751/shaka-smart.webp?w=95&amp;h=95&amp;f=d25eb6dac0c5752b978bf506ffbac198&quot;) no-repeat;background-size: contain;margin-right: 10px;margin-bottom: 10px;">
-                            <a
-                                class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong><span style="text-decoration: underline;">Basketball Fans Aren't Talking About Texas' Win, But The Coach's New Hair</span></strong><br></a>
-                        </div>
+                    <div class="col-12 d-flex d-lg-flex align-items-lg-center" style="padding: 10px;padding-left: 20px;border-bottom-width: 1px;border-bottom-style: none;">
+                        <img class=" float-left" src="https://d.newsweek.com/en/full/1678484/melania-trumpa.webp?w=95&amp;h=95&amp;f=74a642714b793bb5dee8a59906babd3c" >
+                        <a class="text-wrap" href="#" style="color: rgb(0,0,0);font-size: 11px;margin-top: 10px;line-height: 13px;"><strong>There Are Nearly 100,00 U.S. COVID&nbsp;Patients in Hospital Right Now</strong></a>
                     </div>
                 </div>
-            </div>
         </div>
+        
     </div>
-    <div class="row" style="margin-top: 40px;">
-        <div class="col">
-            <div class="row">
+
+    <div class="d-flex flex-column   flex-xs-column flex-md-column flex-lg-row" style="margin-top: 40px;">
+        
+        
+        <div class="col-xs-12 col-md-12 col-lg-6">
+            <div class="row d-flex ">
                 <div class="col">
                     <h5 class="text-uppercase" style="color: rgb(242,68,35);font-size: 12px;"><strong>Subscribe</strong></h5>
                 </div>
             </div>
-            <div class="row" style="background: #f9f9f9;padding: 10px;">
-                <div class="col" style="padding: 0;width: 209px;"><img style="background: url(&quot;https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=170&amp;q=95&amp;f=b831bcfec318510363b4a65a51bc2b6a&quot;);width: 170px;height: 228px;margin-left: 25px;"></div>
-                <div class="col">
+            <div class="row d-flex flex-column flex-md-row" style="background: #f9f9f9;padding: 10px;">
+                <div class="col d-flex col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+                    <img style="background: url(&quot;https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=170&amp;q=95&amp;f=b831bcfec318510363b4a65a51bc2b6a&quot;);width: 170px;height: 228px;margin-left: 25px;">
+                </div>
+                <div class="row d-flex col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
                     <h1 class="text-wrap" style="color: rgb(0,0,0);font-size: 18px;"><strong>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</strong></h1>
-                    <p class="text-wrap" style="font-size: 12px;">All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p><button class="btn btn-primary text-uppercase" type="button" style="width: 99px;height: 25px;padding: 0;background: rgb(242,68,35);border-bottom-color: rgb(242,68,35);font-size: 13px;"><strong>Subcribe</strong></button></div>
+                    <p class="text-wrap" style="font-size: 12px;">All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
+                    <button class="btn btn-primary text-uppercase" type="button" style="width: 99px;height: 25px;padding: 0;background: rgb(242,68,35);border-bottom-color: rgb(242,68,35);font-size: 13px;"><strong>Subcribe</strong></button>
+                </div>
             </div>
         </div>
-        <div class="col">
-            <div class="row">
+
+        <div class="col-xs-12 col-md-12 col-lg-6">
+            <div >
                 <div class="col">
                     <h5 class="text-uppercase" style="color: rgb(242,68,35);font-size: 12px;padding-left: 20px;"><strong>newsletter</strong></h5>
                 </div>
             </div>
-            <div class="row" style="background: rgba(249,249,249,0);padding: 10px;">
-                <div class="col"><img style="background: url(&quot;https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=170&amp;q=95&amp;f=b831bcfec318510363b4a65a51bc2b6a&quot;);width: 170px;height: 228px;margin-left: 25px;"></div>
-                <div class="col">
+            <div class="row d-flex  flex-sm-row" style="background: rgba(249,249,249,0);padding: 10px;">
+                <div class="col d-flex col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+                    <img style="background: url(&quot;https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=170&amp;q=95&amp;f=b831bcfec318510363b4a65a51bc2b6a&quot;);width: 170px;height: 228px;margin-left: 25px;">
+                </div>
+                <div class="col ">
                     <h1 class="text-wrap" style="color: rgb(0,0,0);font-size: 18px;"><strong>The Starting 5</strong></h1>
-                    <p class="text-wrap" style="font-size: 12px;width: 140px;">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
-                    <div class="form-group d-flex flex-column"><input type="email" style="width: 140px;font-size: 12px;padding-left: 5px;" placeholder="Email address"><button class="btn btn-primary text-uppercase" type="button" style="width: 140px;height: 25px;padding: 0;background: rgb(242,68,35);border-bottom-color: rgb(242,68,35);font-size: 13px;"><strong>Subcribe</strong></button></div>
+                    <p class="text-wrap" style="font-size: 12px;">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                    <div class="form-group d-flex flex-column">
+                        <input type="email" style="width: 140px;font-size: 12px;padding-left: 5px;" placeholder="Email address">
+                        <button class="btn btn-primary text-uppercase" type="button" style="width: 140px;height: 25px;padding: 0;background: rgb(242,68,35);border-bottom-color: rgb(242,68,35);font-size: 13px;"><strong>Subcribe</strong>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+
+
     </div>
+
+
+
     </main>
     </div>
+
+
+
+
+
+
+
     <!-- Start: Footer Clean -->
     <div class="footer-clean" style="padding-top: 0;border-top: 2px solid rgb(247,247,247);margin-top: 25px;">
         <div class="row d-flex flex-column justify-content-between flex-sm-column flex-lg-row flex-xl-row" style="border-bottom: 1px solid rgb(235,235,235);height: 60px;margin-bottom: 5px;margin-top: 0;padding-right: 60px;padding-left: 0;">
@@ -876,9 +1061,20 @@
             </div>
         </footer>
     </div>
+
+
+
+
+
+
+
+
+
+
     <!-- End: Footer Clean -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 
 </html>
