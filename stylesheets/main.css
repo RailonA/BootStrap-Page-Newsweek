@@ -15,4 +15,13 @@ header h1 {
 }
 
 
-
+.col-two{
+  position: sticky;
+  top:0;
+  height: 2430px;
+  }
+  .col-three{
+    position: sticky;
+    top: 0;
+  height: 1022px;
+  }
