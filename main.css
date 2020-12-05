@@ -68,6 +68,7 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .header-section-one {
@@ -242,6 +243,18 @@ img {
   padding: 10px 0;
 }
 
+.newsletter-signup p {
+  display: flex;
+  background-color: #f00;
+  color: white;
+  font-weight: bold;
+  justify-items: center;
+  align-self: center;
+  width: 50px;
+  padding: 0 15px;
+  margin-right: 10px;
+}
+
 .thumbnail-sm .category p {
   color: rgb(51, 51, 51);
 }
@@ -413,12 +426,14 @@ img {
 }
 
 .sub-section {
+  margin: 20px 0;
   background: #f9f9f9;
 }
 
 .sub-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   margin-left: 10px;
   padding: 0;
@@ -429,18 +444,34 @@ img {
   font-weight: bold;
 }
 
+.sub-text button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .red-button {
-  width: 99px;
-  height: 25px;
-  padding: 0;
+  width: 120px;
+  height: 45px;
+  padding: 10px;
   background: rgb(242, 68, 35);
-  border-bottom-color: rgb(242, 68, 35);
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
+  border: transparent;
+  margin-left: 0;
+}
+
+.news-section {
+  margin: 20px 0;
+  background: #f9f9f9;
 }
 
 .news-section img {
   margin: 0;
   height: 300px;
+}
+
+.news-text-button {
+  padding: 20px;
 }
 
 footer {
@@ -468,6 +499,49 @@ footer {
 
 .mag-section {
   margin-top: 80px;
+}
+
+.newsletter-signup div {
+  width: 320px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter-signup form {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+
+.form-background {
+  background-color: rgb(235, 235, 235);
+}
+
+.newsletter-signup-div {
+  padding: 5px;
+}
+
+.newsletter-signup h2 {
+  color: black;
+}
+
+.newsletter-signup button {
+  color: white;
+  width: 210px;
+  height: 30px;
+  margin-left: -13px;
+}
+
+.free-signup {
+  width: 210px;
+}
+
+.flex-column :nth-child(2) {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-secton-two {
@@ -570,13 +644,7 @@ footer {
   .col-one {
     position: sticky;
     top: 0;
-    height: 2060px;
-  }
-
-  .col-three {
-    position: sticky;
-    top: 0;
-    height: 958px;
+    height: 3060px;
   }
 
   .main-logo {
@@ -585,6 +653,11 @@ footer {
     height: 40px;
     padding: 0 5px 0 0;
     margin: 0;
+  }
+
+  .newsletter-signup form {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header-section-three {
@@ -624,9 +697,26 @@ footer {
     margin-top: 7px;
     margin-left: 5px;
   }
+
+  .sub-section h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
 }
 
 @media (min-width: 1024px) {
+  .col-one {
+    position: sticky;
+    top: 0;
+    height: 2060px;
+  }
+
+  .col-three {
+    position: sticky;
+    top: 0;
+    height: 1090px;
+  }
+
   .main-logo {
     filter: grayscale(100%) invert(100%) contrast(10);
     min-width: 131px;
@@ -659,8 +749,8 @@ footer {
   .header-nav-row {
     padding: 8px 0 0 15px;
     width: 90%;
-    margin-top: -10px;
-    margin-bottom: 5px;
+    margin-top: -30px;
+    margin-bottom: 15px;
     background: #fff;
     font-size: 14px;
     border-top-right-radius: 25px;
@@ -679,6 +769,7 @@ footer {
     color: black;
     font-weight: bold;
     padding: 0 5px;
+    border-right: solid 1px #000;
   }
 
   .header-nav1-weather {

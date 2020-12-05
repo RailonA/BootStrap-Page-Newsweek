@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<main class="container">  
+<main class="container-fluid">  
  <!-- HEADER -->
   <header>
     <section class="header d-flex">
@@ -151,7 +151,7 @@
       </div>
       <!-- Middle Column -->
       <div class=" order-3 order-md-2 col-12 col-md-6 col-lg-5 col-two">
-        <h2>Top Story</h2>
+        <h2 class="d-none d-md-flex " >Top Story</h2>
         <div class="d-flex flex-column">
           <section class=" article-group order-1 order-md-1 d-none d-md-block" id="top-story">
             <article class="thumbnail-lg">
@@ -385,6 +385,19 @@
                 <p>By <a href="#">Alyssa Milano</a></p>
               </div>
             </article>
+            <div>
+              <div class="newsletter-signup flex-column">
+                <div class="form-background d-flex flex-column">
+                <div class=" newsletter-signup-div d-flex  n-title flex-xs ai-c">
+                  <p>N</p>
+                  <h2 class="text-center">Start your day with our top 5 articles<h2>
+                  </div>
+                 <form class=" free-signup">
+                <input type="text" class="form-text" placeholder="Email address">
+                <button type="submit" class=" text-nowrap form-submit red-button">Free Sign Up ></button>
+              </div>
+            </div>
+            </div>
           </section>
       </div>
     </section>
@@ -820,14 +833,19 @@
        <div class="row col-12 col-lg-8">
               <h5 class="text-uppercase sub-header">Subscribe</h5>
       <div class="d-flex flex-column flex-md-row sub-section">
-          <div class="col d-flex ">
+          <div class="d-flex col-12 col-md-6">
             <img alt="#"  src="https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=360&amp;h=480&amp;q=90&amp;f=72688076d2b17cf70a26e18a31a2a69a">
           </div>
-          <div class="col sub-text">
-              <h1>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h1>
-              <p >All Access + Weekly Delivery.Choose A Membership That's Perfect for You!</p>
-              <button class="btn btn-primary text-uppercase red-button" type="button" >Subcribe</button>
+          <div class=" sub-text  d-flex d-md-none">
+              <h1 class=" d-flex text-center">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h1>
+              <p class=" d-flex text-center ">All Access + Weekly Delivery.Choose A Membership That's Perfect for You!</p>
+              <button class="subscribe-btn  col btn btn-primary text-uppercase red-button" type="button" >Subcribe ></button>
           </div>
+          <div class="sub-text d-none d-md-flex">
+            <h1 >In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h1>
+            <p >All Access + Weekly Delivery.Choose A Membership That's Perfect for You!</p>
+            <button class="subscribe-btn  btn btn-primary text-uppercase red-button" type="button" >Subcribe ></button>
+        </div>
       </div>
       </div>
       <!-- NEWSLETTER -->
@@ -837,23 +855,31 @@
                 <div class=" col-12 col-md-6 ">
                   <img alt="#" src="https://d.newsweek.com/en/full/1675581/cover-december-04-11-2020.jpg?w=360&amp;h=480&amp;q=90&amp;f=72688076d2b17cf70a26e18a31a2a69a">
                 </div>
-                <div class=" news-text">
-                  <h1><strong>The Starting 5</strong></h1>
+                <div class=" news-text d-flex d-md-none flex-column">
+                  <h1>The Starting 5</h1>
+                  <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                  <div class=" row news-text-button">
+                    <input class=" col" type="email" placeholder="Email address">
+                    <button class=" col btn btn-primary text-uppercase red-button" type="button">Subcribe ></button>
+                  </div>
+                </div>
+                <div class=" news-text d-none d-md-flex flex-column">
+                  <h1>The Starting 5</h1>
                   <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
                   <div class=" col">
                     <input type="email" placeholder="Email address">
-                    <button class="btn btn-primary text-uppercase red-button" type="button">Subcribe</button>
+                    <button class="btn btn-primary text-uppercase red-button" type="button">Subcribe ></button>
                   </div>
                 </div>
             </div>
       </div>
     </section>
 <!-- FOOTER -->
-   <footer class="container-fluid">
+   <footer class="">
       <section class="footer-secton-one d-flex flex-column flex-md-row">
         <div class="d-flex logo-container flex-column flex-md-row">
           <img alt="#"class="footer-logo" src="images/logo.png">
-          <p class="logo-container-p">© 2020 NEWSWEEK DIGITAL LLC</p>
+          <p class="logo-container-p col">© 2020 NEWSWEEK DIGITAL LLC</p>
         </div>
         <!-- End: Social Icons -->
         <div>
