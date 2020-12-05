@@ -608,7 +608,6 @@ footer {
   margin-left: -180px;
 }
 
-
 @media (min-width: 320px) {
   .btn-yellow {
     display: flex;
@@ -659,7 +658,6 @@ footer {
     top: 0;
     height: 3200px;
   }
-
 
   .main-logo {
     filter: grayscale(100%) invert(100%) contrast(10);
