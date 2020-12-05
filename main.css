@@ -660,6 +660,7 @@ footer {
     height: 3200px;
   }
 
+
   .main-logo {
     filter: grayscale(100%) invert(100%) contrast(10);
     max-width: 300px;
@@ -721,13 +722,13 @@ footer {
   .col-one {
     position: sticky;
     top: 0;
-    height: 2160px;
+    height: 2000px;
   }
 
   .col-three {
     position: sticky;
     top: 0;
-    height: 1090px;
+    height: 1190px;
   }
 
   .main-logo {
