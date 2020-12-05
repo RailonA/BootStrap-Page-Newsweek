@@ -12,11 +12,11 @@ This project aims to clone The Newsweek home page using HTML, CSS and Bootstrap 
 
 > The Tablet version :
 
-![screenshot](./assets/imgs/screenshot-tab.jpg)
+![screenshot](./images/screenshot-tab.jpg)
 
 > The Mobil version :
 
-![screenshot](./assets/imgs/screenshot-mob.jpg)
+![screenshot](./images/screenshot-mob.jpg)
 
 ## Built With
 
