@@ -596,6 +596,19 @@ footer {
   list-style: none;
 }
 
+.sub-img :nth-child(1) {
+  width: 250px;
+  height: 300px;
+}
+
+.sub-img :nth-child(2) {
+  width: 250px;
+  height: 300px;
+  margin-top: 80px;
+  margin-left: -180px;
+}
+
+
 @media (min-width: 320px) {
   .btn-yellow {
     display: flex;
@@ -644,7 +657,7 @@ footer {
   .col-one {
     position: sticky;
     top: 0;
-    height: 3060px;
+    height: 3200px;
   }
 
   .main-logo {
@@ -708,7 +721,7 @@ footer {
   .col-one {
     position: sticky;
     top: 0;
-    height: 2060px;
+    height: 2160px;
   }
 
   .col-three {
