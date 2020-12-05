@@ -722,13 +722,13 @@ footer {
   .col-one {
     position: sticky;
     top: 0;
-    height: 2000px;
+    height: 2060px;
   }
 
   .col-three {
     position: sticky;
     top: 0;
-    height: 1190px;
+    height: 1090px;
   }
 
   .main-logo {
