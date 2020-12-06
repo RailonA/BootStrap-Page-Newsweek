@@ -817,9 +817,9 @@ footer {
   }
 
    .news-section div img {
-  height: 400px;
-  margin-bottom: 20px;
-}
+    height: 400px;
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 1440px) {
   .header-nav-row {
