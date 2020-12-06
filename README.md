@@ -55,7 +55,7 @@ or
 
 1- Clone the repository
 ```
- $ git clone https://github.com/VanessaAoki/NewsweekClone.git
+ $ git clone git@github.com:RailonA/BootStrap-Page-Newsweek.git
 ```
 
 2- Open the folder on VS Code, right click the index.html file and click on "Open With Live Server"
@@ -77,7 +77,7 @@ or
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/VanessaAoki/NewsweekClone/issues).
+Feel free to check the [issues page](https://github.com/RailonA/BootStrap-Page-Newsweek/issues).
 
 ## Show your support
 
