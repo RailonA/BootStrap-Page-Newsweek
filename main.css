@@ -608,6 +608,11 @@ footer {
   margin-left: -180px;
 }
 
+.news-section div img {
+  height: 250px;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 320px) {
   .btn-yellow {
     display: flex;
@@ -650,6 +655,10 @@ footer {
     margin-left: 5px;
     font-size: 25px;
   }
+}
+
+@media (min-width: 425px) {
+
 }
 
 @media (min-width: 768px) {
@@ -810,6 +819,11 @@ footer {
     color: rgb(99, 99, 99);
     font-weight: bold;
   }
+
+   .news-section div img {
+  height: 400px;
+  margin-bottom: 20px;
+} 
 }
 
 @media (min-width: 1440px) {
