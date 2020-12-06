@@ -657,10 +657,6 @@ footer {
   }
 }
 
-@media (min-width: 425px) {
-
-}
-
 @media (min-width: 768px) {
   .col-one {
     position: sticky;
@@ -823,7 +819,6 @@ footer {
    .news-section div img {
   height: 400px;
   margin-bottom: 20px;
-} 
 }
 
 @media (min-width: 1440px) {
